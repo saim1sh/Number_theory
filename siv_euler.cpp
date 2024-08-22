@@ -7,7 +7,7 @@ int arr[1000001];
 
 void sivOfEuler()
 {
-   int n = 100;
+   int n = 1000000;
    arr[1] = 1;
    for (int i = 2; i <= n; i++)
    {
