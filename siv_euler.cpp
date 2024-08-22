@@ -29,7 +29,18 @@ signed main()
    cin.tie(NULL);
    cout.tie(NULL);
    sivOfEuler();
-   for (auto n : primes)
-      cout << n << endl;
+   int n;
+   cin >> n;
+   while (n > 1)
+   {
+      int y = arr[n];
+      int cnt = 0;
+      while (arr[n] == y)
+      {
+         n /= y;
+         cnt++;
+      }
+      cout << "(" << y << "^" << cnt << ")" << endl;
+   }
    return 0;
 }
